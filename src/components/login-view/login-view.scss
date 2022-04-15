@@ -1,0 +1,40 @@
+$buttonColor: #FBF8BE;
+
+.button-container{
+  background-color: #FBF8BE;
+  text-align: center;
+  padding: 8px;
+  border: none;
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 15px;
+  box-shadow: 3px 3px 8px 0 #000; /* h-offset v-offset blur spread color */
+}
+
+.header{
+  font-size: 30px;
+  font-family: "American Typewriter", sans-serif;
+  text-align: center;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+#login-button {
+  background-color: $buttonColor;
+  border: none;
+  color: black;
+}
+
+label {
+  color: #FBF8BE;
+  font-family: "Helvetica Neue", sans-serif;
+  margin-top: 20px;
+  font-weight: bold;
+  display: block;
+}
+
+.form-label{
+  font-size: 20px;
+  font-family: "Helvetica Neue", sans-serif;
+  width: 20%;
+}

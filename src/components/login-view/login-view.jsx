@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import axios from 'axios';
+
+import "./login-view.scss";
+import { Form, Button, } from "react-bootstrap";
 
 export function LoginView(props) {
     const [username, setUsername] = useState('');
@@ -16,6 +18,11 @@ export function LoginView(props) {
 
 
     return (
+        <>
+            <div class="header">
+                <h1>Welcome to myFlix!</h1>
+                <p>Please log in to continue</p>
+            </div>
         <Form>
             <Form.Group controlId="formUsername">
                 <Form.Label>Username:</Form.Label>
@@ -26,9 +33,21 @@ export function LoginView(props) {
                 <Form.Label>Password:</Form.Label>
                 <Form.Control type="password" onChange={e => setPassword(e.target.value)} />
             </Form.Group>
-            <Button variant="primary" type="submit" onClick={handleSubmit}>
-                Submit
+
+            <div class="button-container">
+            <Button id="login-button" variant="primary" type="submit" onClick={handleSubmit}>
+                Login
             </Button>
+            </div>
         </Form>
+        </>
     );
 }
+
+LoginView.propTypes = {
+    register: PropTypes.shape({
+        Username: PropTypes.string.isRequired,
+        Password: PropTypes.string.isRequired,
+    }),
+    onLoggedIn: PropTypes.func.isRequired
+};

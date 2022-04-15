@@ -17,7 +17,7 @@ export class MainView extends React.Component {
             selectedMovie: null
         }
     }
-  
+
 
     componentDidMount(){
         axios.get('https://mymovies-4523.herokuapp.com/movies')
