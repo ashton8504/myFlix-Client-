@@ -7,3 +7,40 @@ $textColor: #FBF8BE;
   font-family: "Helvetica Neue", sans-serif;
 }
 
+.card-body {
+  font-size: 25px;
+  font-family: "American Typewriter", sans-serif;
+  //border: 10px solid black;
+
+}
+img{
+  border-radius: 10px;
+}
+.movie-poster{
+  text-align: center;
+}
+
+.movie-title{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.movie-description{
+  padding-bottom: 5px;
+}
+
+.movie-genre{
+  padding-bottom: 5px;
+}
+
+.movie-director{
+  padding-bottom: 5px;
+}
+
+.btn-back{
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px 0 #000; /* h-offset v-offset blur spread color */
+}

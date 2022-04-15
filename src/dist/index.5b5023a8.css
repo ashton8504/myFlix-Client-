@@ -1,9 +1,59 @@
+.card-body {
+  font-family: American Typewriter, sans-serif;
+  font-size: 25px;
+}
 
+.card-img-top {
+  border: none;
+  font-family: American Typewriter, sans-serif;
+  font-size: 25px;
+}
+
+.card-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-link {
+  text-align: center;
+  margin-top: 10px;
+  box-shadow: 3px 3px 8px #000;
+}
 
 * {
   color: #fbf8be;
   background-color: #234e70;
   font-family: Helvetica Neue, sans-serif;
+}
+
+.card-body {
+  font-family: American Typewriter, sans-serif;
+  font-size: 25px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.movie-poster {
+  text-align: center;
+}
+
+.movie-title {
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.movie-description, .movie-genre, .movie-director {
+  padding-bottom: 5px;
+}
+
+.btn-back {
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 3px 3px 8px #000;
 }
 
 
