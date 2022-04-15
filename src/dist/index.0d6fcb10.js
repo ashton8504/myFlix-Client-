@@ -29567,6 +29567,7 @@ class MovieCard extends _reactDefault.default.Component {
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_buttonDefault.default, {
+                            id: "login-button",
                             onClick: ()=>onMovieClick(movie)
                             ,
                             variant: "link",
