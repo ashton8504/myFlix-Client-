@@ -44,7 +44,7 @@ export class MainView extends React.Component {
                 console.log(error);
             });
     }
-
+  
     setSelectedMovie(newSelectedMovie) {
         this.setState({
             selectedMovie: newSelectedMovie
