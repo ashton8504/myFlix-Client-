@@ -11,10 +11,28 @@ export function LoginView(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(username, password);
-        // Send a request to the server for authentication, then call props.onLoggedIn(username)
-        props.onLoggedIn(username);
+        /* Send a request to the server for authentication */
+        axios.post('https://mymovies-4523.herokuapp.com/login', {
+            Username: username,
+            Password: password
+        })
+            .then(response => {
+                const data = response.data;
+                props.onLoggedIn(data);
+            })
+            .catch(e => {
+                console.log('no such user')
+            });
     };
+
+    //OLD CODE SAVING IN CASE THERE IS A BUG
+
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     console.log(username, password);
+    //     // Send a request to the server for authentication, then call props.onLoggedIn(username)
+    //     props.onLoggedIn(username);
+    // };
 
 
     return (
