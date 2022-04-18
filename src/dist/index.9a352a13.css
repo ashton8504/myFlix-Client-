@@ -1,0 +1,46 @@
+
+
+.button-container {
+  text-align: center;
+  background-color: #fbf8be;
+  border: none;
+  border-radius: 15px;
+  margin-top: 10px;
+  padding: 8px;
+  display: inline-block;
+  box-shadow: 3px 3px 8px #000;
+}
+
+.header {
+  text-align: center;
+  font-family: American Typewriter, sans-serif;
+  font-size: 30px;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+#login-button {
+  color: #000;
+  background-color: #fbf8be;
+  border: none;
+}
+
+label {
+  color: #fbf8be;
+  margin-top: 20px;
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: bold;
+  display: block;
+}
+
+.form-label {
+  width: 20%;
+  font-family: Helvetica Neue, sans-serif;
+  font-size: 20px;
+}
+
+.my-flix {
+  color: #4682b4;
+}
+
+/*# sourceMappingURL=index.9a352a13.css.map */
